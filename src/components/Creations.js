@@ -4,7 +4,7 @@ const Creations = () => {
   const [cards, setCards] = useState(data);
   return (
     <section className="creations-mobile">
-        <h2>Our creations</h2>
+      <h2>Our creations</h2>
       <section>
         {cards.map(card => {
           const { id, image, title } = card;
@@ -19,9 +19,7 @@ const Creations = () => {
         })}
       </section>
       <div className="btn-container">
-          <button className="btn">
-              See All
-          </button>
+        <button className="btn">See All</button>
       </div>
     </section>
   );

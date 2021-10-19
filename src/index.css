@@ -32,16 +32,37 @@ ul {
   list-style-type: none;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+  font-family: "Alata", sans-serif;
+  color: #fff;
+}
 /* Header */
 .header {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
+  padding: 10px 20px;
+}
+.header .menu-btn {
+  padding: 20px;
+  cursor: pointer;
+}
+.header .menu-btn .bar {
+  width: 35px;
+  height: 3px;
+  background: #fff;
+  margin: 0 0 5px;
+}
+/*mobile - hide navbar*/
+.header nav {
+  display: none;
 }
 
 /* showImg*/
-
 .show {
   background: url("./images/image-hero.jpg");
   background-repeat: no-repeat;

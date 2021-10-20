@@ -41,6 +41,7 @@ button {
   background-color: transparent;
   font-family: "Alata", sans-serif;
   color: var(--white);
+  cursor: pointer;
 }
 img {
   max-width: 100%;
@@ -184,7 +185,7 @@ footer > p {
 
 /* desktop */
 
-@media (min-width:700px){
+@media (min-width:1280px){
   .show {
     background: url("./images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
@@ -247,5 +248,35 @@ footer > p {
   .creations-desktop article:hover{
     opacity: 0.7;
     cursor: pointer;
+  }
+  .interactive {
+    position:relative;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+  .interactive-text{
+    position: absolute;
+    bottom: 50px;
+    right:120px;
+    width:50%;
+    background: var(--white);
+  }
+  footer {
+    text-align: initial;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 200px;
+  }
+  footer .social-icon{
+    display: flex;
+  }
+  footer ul{
+    display: flex;
+  }
+  footer ul li{
+    margin: 0 20px 0 0;
+  }
+  footer ul li button{
+    font-size: 1.2rem;
   }
 }

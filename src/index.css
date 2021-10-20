@@ -43,7 +43,7 @@ button {
   color: var(--white);
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 /* Header */
 .header {
@@ -71,7 +71,7 @@ img {
 
 /* showImg*/
 .show {
-  background: url("./images/image-hero.jpg");
+  background: url("./images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -127,6 +127,10 @@ img {
 .creations-mobile article {
   position: relative;
 }
+.creations-mobile article:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
 .creations-mobile .btn-container {
   text-align: center;
   padding: 30px 0;
@@ -141,6 +145,9 @@ img {
 .creations-mobile .btn-container .btn:hover {
   background: var(--black);
   color: var(--white);
+}
+.creations-desktop{
+  display: none;
 }
 /* Footer */
 footer {
@@ -173,4 +180,72 @@ footer > p {
   font-family: "Alata", sans-serif;
   color: var(--dark-gray);
   font-size: 15px;
+}
+
+/* desktop */
+
+@media (min-width:700px){
+  .show {
+    background: url("./images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .show .text h1{
+    width:700px;
+    font-size: 65px;
+    margin-top: 100px;
+  }
+  .creations-mobile{
+    display: none;
+  }
+  .creations-desktop{
+    display: block;
+    padding: 50px 20px;
+  }
+  .creations-desktop .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin:auto;
+    padding: 30px 0;
+  }
+  .creations-desktop .btn-container {
+    text-align: center;
+  }
+  .creations-desktop .btn-container .btn {
+    border: 2px solid var(--black);
+    padding: 10px 30px;
+    color: var(--black);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .creations-desktop .btn-container .btn:hover {
+    background: var(--black);
+    color: var(--white);
+  }
+  .creations-desktop section{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1000px;
+    gap:20px;
+    margin:auto;
+  }
+  .creations-desktop h3 {
+    padding: 0 0 20px 20px;
+    position: absolute;
+    bottom: 0;
+    color: var(--white);
+    width: 150px;
+    font-size: 25px;
+    line-height: 1.3;
+  }
+  .creations-desktop article {
+    position: relative;
+  }
+  .creations-desktop article:hover{
+    opacity: 0.7;
+    cursor: pointer;
+  }
 }

@@ -124,6 +124,7 @@ img {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
+  place-items: center;
 }
 .creations-mobile article {
   position: relative;

@@ -83,6 +83,7 @@ img {
 }
 
 .header nav {
+  display: none;
   position: absolute;
   top:0;
   right: 0;
@@ -90,6 +91,9 @@ img {
   bottom: 0;
   background: var(--black);
   min-height: 100vh;
+}
+.header nav.openNav {
+  display: block;
 }
 .header nav ul{
   padding: 100px 0 0 20px;

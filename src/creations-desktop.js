@@ -1,4 +1,4 @@
-const data = [
+const data = [ 
   {
     id: 1,
     image: "./images/desktop/image-deep-earth.jpg",

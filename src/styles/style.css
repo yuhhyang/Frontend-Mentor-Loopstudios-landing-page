@@ -135,4 +135,15 @@ header nav ul li button:hover {
   padding: 20px;
 }
 
-/*  *//*# sourceMappingURL=style.css.map */
+/* Interactive */
+.interactive {
+  padding: 50px 20px;
+  text-align: center;
+}
+.interactive .interactive-text {
+  padding: 0 40px;
+}
+.interactive .interactive-text h2 {
+  padding: 30px 0 20px;
+  line-height: 1.2;
+}/*# sourceMappingURL=style.css.map */

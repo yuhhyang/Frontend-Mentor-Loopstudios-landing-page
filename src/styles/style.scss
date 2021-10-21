@@ -312,3 +312,18 @@ footer {
         }
     }
 }
+// interactive
+@media (min-width:880px){
+    .interactive {
+        position:relative;
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        .interactive-text{
+            position: absolute;
+            bottom: 50px;
+            right:120px;
+            width:50%;
+            background: $white;
+        }
+    }
+}

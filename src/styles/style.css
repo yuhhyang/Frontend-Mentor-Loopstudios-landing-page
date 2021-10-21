@@ -313,4 +313,18 @@ footer .social-icon li {
     background: black;
     color: white;
   }
+}
+@media (min-width: 880px) {
+  .interactive {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .interactive .interactive-text {
+    position: absolute;
+    bottom: 50px;
+    right: 120px;
+    width: 50%;
+    background: white;
+  }
 }/*# sourceMappingURL=style.css.map */

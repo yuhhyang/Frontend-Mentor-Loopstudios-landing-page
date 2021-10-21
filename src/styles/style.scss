@@ -199,8 +199,6 @@ footer {
             margin-bottom: 20px;
         }
     }
-}
-footer {
     p {
         font-family: $Alata;
         color: $dark-gray;
@@ -312,7 +310,7 @@ footer {
         }
     }
 }
-// interactive
+// desktop - interactive & footer
 @media (min-width:880px){
     .interactive {
         position:relative;
@@ -324,6 +322,24 @@ footer {
             right:120px;
             width:50%;
             background: $white;
+        }
+    }
+    footer{
+        text-align: initial;
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        .social-icon{
+            display: flex;
+        }
+        ul{
+            display: flex;
+            li{
+                margin: 0 20px 0 0;
+                button{
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }

@@ -327,4 +327,23 @@ footer .social-icon li {
     width: 50%;
     background: white;
   }
+
+  footer {
+    text-align: initial;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  footer .social-icon {
+    display: flex;
+  }
+  footer ul {
+    display: flex;
+  }
+  footer ul li {
+    margin: 0 20px 0 0;
+  }
+  footer ul li button {
+    font-size: 1.2rem;
+  }
 }/*# sourceMappingURL=style.css.map */

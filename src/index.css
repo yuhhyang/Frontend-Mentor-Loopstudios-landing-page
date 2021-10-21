@@ -6,6 +6,8 @@
   --black: hsl(0, 0%, 0%);
   --dark-gray: hsl(0, 0%, 55%);
   --very-dark-gray: hsl(0, 0%, 41%);
+  --Alata: "Alata", sans-serif;
+  --Josefin-Sans: "Josefin Sans", sans-serif;
 }
 
 * {
@@ -16,7 +18,7 @@
 
 p {
   font-size: 15px;
-  font-family: "Alata", sans-serif;
+  font-family: var(--Alata);
   color: var(--very-dark-gray);
 }
 h1,
@@ -25,7 +27,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: var(--Josefin-Sans);
   text-transform: uppercase;
 }
 
@@ -39,7 +41,7 @@ ul {
 button {
   border: none;
   background-color: transparent;
-  font-family: "Alata", sans-serif;
+  font-family: var(--Alata);
   color: var(--white);
   cursor: pointer;
 }
@@ -211,14 +213,14 @@ footer .social-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 20px;
 }
 footer .social-icon li {
   margin-right: 20px;
   font-size: 25px;
 }
 footer > p {
-  font-family: "Alata", sans-serif;
+  font-family: var(--Alata);
   color: var(--dark-gray);
 }
 

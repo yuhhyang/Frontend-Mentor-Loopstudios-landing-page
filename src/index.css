@@ -48,9 +48,10 @@ button {
 
 img {
   max-width: 100%;
-}
+} 
+
 /* Header */
-.header {
+header {
   position: absolute;
   display: flex;
   align-items: center;
@@ -58,29 +59,29 @@ img {
   width: 100%;
   padding: 10px 20px;
 }
-.header .menu-btn {
+header .menu-btn {
   padding: 20px;
   cursor: pointer;
 }
 
-.header .menu-btn.closeNav .bar-1{
+header .menu-btn.closeNav .bar-1{
   transform: rotate(40deg);
 }
-.header .menu-btn.closeNav .bar-2{
+header .menu-btn.closeNav .bar-2{
   opacity: 0;
 }
-.header .menu-btn.closeNav .bar-3{
+header .menu-btn.closeNav .bar-3{
   transform: rotate(-40deg);
   margin-top: -16px;
 }
-.header .menu-btn .bar {
+header .menu-btn .bar {
   width: 35px;
   height: 3px;
   background: var(--white);
   margin: 0 0 5px;
 }
 
-.header nav {
+header nav {
   display: none;
   position: absolute;
   top:0;
@@ -90,25 +91,25 @@ img {
   background: var(--black);
   min-height: 100vh;
 }
-.header nav.openNav {
+header nav.openNav {
   display: block;
 }
-.header nav ul{
+header nav ul{
   padding: 100px 0 0 20px;
 }
-.header nav ul li{
+header nav ul li{
   margin-bottom: 20px;
 }
-.header nav ul li button{
+header nav ul li button{
   text-transform: uppercase;
   font-size: 2rem;
 }
-.header nav ul li button:hover{
+header nav ul li button:hover{
   border: white solid 1px;
   border-radius: 25px;
   padding: 5px;
 }
-.header nav .navLogo{
+header nav .navLogo{
   padding: 20px;
 }
 /* showImg*/
@@ -227,30 +228,30 @@ footer > p {
 /* desktop */
 
 @media (min-width:880px){
-  .header {
+  header {
     padding:20px 30px;
   }
-  .header .menu-btn {
+  header .menu-btn {
     display:none;
   }
-  .header nav {
+  header nav {
     display: block;
     background: transparent;
   }
-  .header nav .navLogo{
+  header nav .navLogo{
     display: none;
   }
-  .header nav ul {
+  header nav ul {
     position: absolute;
     display: flex;
     top: 20px;
     right:30px;
     padding: 0;
   }
-  .header nav ul li {
+  header nav ul li {
     margin: 0 20px 0 0;
   }
-  .header nav ul li button {
+  header nav ul li button {
     text-transform: capitalize;
     font-size: 1.3rem;
   }

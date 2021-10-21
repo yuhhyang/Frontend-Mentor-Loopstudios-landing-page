@@ -11,7 +11,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className="header">
+      <header>
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>

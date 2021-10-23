@@ -1,21 +1,17 @@
-import React from "react";
+import React,{useState} from "react";
 import logo from "../images/logo.svg";
 const Header = () => {
-  const showNav = () => {
-    const menuBtn = document.querySelector(".menu-btn");
-    const nav = document.querySelector("nav");
-    menuBtn.addEventListener("click", () => {
-      nav.classList.toggle("openNav");
-      menuBtn.classList.toggle("closeNav");
-    });
-  };
+const [isActive, setActive] = useState(false);
+const handleToggle = () => {
+    setActive(!isActive);
+};
   return (
     <>
       <header>
         <div className="logo">
           <img src={logo} alt="logo" />
         </div>
-        <nav>
+        <nav className={isActive ? "openNav" : ""}>
           <div className="navLogo">
             <img src={logo} alt="logo" />
           </div>
@@ -37,7 +33,7 @@ const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="menu-btn" onClick={() => showNav()}>
+        <div className={ isActive ? "menu-btn closeNav" : "menu-btn"} onClick={handleToggle}>
           <div className="bar bar-1"></div>
           <div className="bar bar-2"></div>
           <div className="bar bar-3"></div>
